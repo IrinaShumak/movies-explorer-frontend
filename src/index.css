@@ -1,0 +1,22 @@
+body {    
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;  
+  font-family: 'Inter', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+  }
+
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/inter.css);
+@import url(./components/App/App.css);
+@import url(./components/Main/NavTab/NavTab.css);
+@import url(./components/Main/NavTab/__logo/NavTab__logo.css);
+@import url(./components/Main/NavTab/__links/NavTab__links.css);
+@import url(./components/Main/NavTab/__link/NavTab__link.css);
+@import url(./components/Main/NavTab/__entry-button/NavTab__entry-button.css);
+@import url(./components/Main/Promo/Promo.css);
+@import url(./components/Main/Promo/__title/Promo__title.css);
+@import url(./components/Main/Promo/__logo/Promo__logo.css);

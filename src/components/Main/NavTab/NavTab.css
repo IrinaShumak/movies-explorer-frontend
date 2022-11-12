@@ -1,0 +1,23 @@
+.NavTab {
+  display: flex;
+  box-sizing: border-box;
+  padding: 21px 70px;
+  margin: 0;
+  min-height: 74px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #073042;
+}
+
+@media screen and (max-width: 800px) {
+  .NavTab {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .NavTab {
+    padding: 24px 14px;
+  }
+}

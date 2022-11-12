@@ -1,0 +1,14 @@
+.NavTab__links {
+  padding: 0;
+  margin: 0;  
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .NavTab__links {
+    gap: 14px;
+  }
+}
