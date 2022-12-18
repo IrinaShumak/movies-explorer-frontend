@@ -1,0 +1,30 @@
+.Profile__input {
+  outline: none;
+  border: none;
+  background: rgba(0, 0, 0, 0);  
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: right;
+  color: #000000;  
+  width: 100%;
+  margin: 0;  
+  box-sizing: border-box;
+  padding: 0 0 0 141px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; /* чтобы текст не был виден за пределами контейнера */
+}
+
+.Profile__input:focus {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 520px) {
+  .Profile__input {
+    padding-left: 130px;
+  }
+}

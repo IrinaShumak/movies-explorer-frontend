@@ -1,0 +1,28 @@
+.AboutProject__description {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 26px;
+  column-gap: 40px;
+  justify-items: start;
+  margin: 70px auto 110px auto;
+}
+
+@media screen and (max-width: 800px) {
+  .AboutProject__description {
+    row-gap: 22px;
+    column-gap: 30px;
+    margin-bottom: 93px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .AboutProject__description {
+    display: flex;
+    flex-direction: column;
+    gap: 0;    
+    margin-bottom: 60px;
+    margin-top: 60px;    
+  }
+}

@@ -1,0 +1,27 @@
+.Header__main {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: right;
+}
+
+@media screen and (max-width: 800px) {
+  .Header__main {
+    flex-direction: column;
+    gap: 28px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;    
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Header__main {    
+    gap: 24px;
+  }
+}

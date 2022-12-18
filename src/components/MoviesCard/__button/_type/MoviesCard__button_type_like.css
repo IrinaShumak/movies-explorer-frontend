@@ -1,0 +1,5 @@
+.MoviesCard__button_type_like {
+  min-height: 12px;
+  min-width: 14px;
+  background-image: url(../../../../images/like-btn.svg);
+}

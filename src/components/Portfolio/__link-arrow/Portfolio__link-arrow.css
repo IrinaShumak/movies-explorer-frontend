@@ -1,0 +1,24 @@
+.Portfolio__link-arrow {
+  padding: 0;
+  margin: 0;
+  width: 29px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-image: url(../../../images/link-arrow-small.svg);
+  margin: 0 0 9px 0;  
+  background-position: 50% 42%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .Portfolio__link-arrow {
+    width: 27px;    
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .Portfolio__link-arrow {
+    width: 18px;
+    height: 28px;
+  }
+}

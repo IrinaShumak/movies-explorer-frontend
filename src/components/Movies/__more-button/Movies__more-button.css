@@ -1,0 +1,41 @@
+.Movies__more-button {
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0);
+  background-image: url(../../../images/more-btn.svg);
+  min-height: 36px;
+  width: 320px;
+  margin: 60px auto 80px auto;  
+  padding: 0 0 3px 0;  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+}
+  
+.Movies__more-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 800px) {
+  .Movies__more-button {    
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Movies__more-button {
+    margin-top: 76px;
+    width: 240px;
+  }
+}

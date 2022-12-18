@@ -1,0 +1,19 @@
+.Portfolio__project {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.Portfolio__project:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.Portfolio__project:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,19 @@
+.AboutMe {
+  padding: 114px 70px 100px 70px;
+  margin: 0;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .AboutMe {
+    padding: 96px 50px 91px 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .AboutMe {
+    padding: 72px 14px 70px 14px;
+  }
+}

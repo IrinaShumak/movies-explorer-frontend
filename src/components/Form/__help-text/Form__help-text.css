@@ -1,0 +1,27 @@
+.Form__help-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #A0A0A0;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 70px;
+  right: 0;  
+}
+
+@media screen and (max-width: 800px) {
+  .Form__help-text {
+    bottom: 232px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Form__help-text {
+    bottom: 30px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

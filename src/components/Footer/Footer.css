@@ -1,0 +1,21 @@
+.Footer {
+  padding: 0 70px;
+  margin: 79px 0 0 0;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .Footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

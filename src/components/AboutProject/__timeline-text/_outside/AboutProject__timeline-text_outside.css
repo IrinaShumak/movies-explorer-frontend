@@ -1,0 +1,10 @@
+.AboutProject__timeline-text_outside {
+  font-weight: 500;
+  color: #A0A0A0;  
+}
+
+@media screen and (max-width: 800px) {
+  .AboutProject__timeline-text_outside {
+    font-weight: 400;    
+  }
+}

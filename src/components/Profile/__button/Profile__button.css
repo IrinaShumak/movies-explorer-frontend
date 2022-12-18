@@ -1,0 +1,37 @@
+.Profile__button {  
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0);  
+  min-height: 16px;
+  width: 100%;
+  margin: 223px 0 0 0; 
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+}
+  
+.Profile__button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 800px) {
+  .Profile__button {
+    margin-top: 213px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Profile__button {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 383px;
+  }
+}

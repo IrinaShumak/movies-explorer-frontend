@@ -1,0 +1,28 @@
+.SearchForm__input {
+  outline: none;  
+  border: none;  
+  background: #FFFFFF;  
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11;
+  color: #A0A0A0;
+  width: calc(100% - 10px - 100px);
+  margin: 25px 0 25px 25px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .SearchForm__input {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    width: calc(100% - 6px - 80px);
+  }
+}

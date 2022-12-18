@@ -1,0 +1,28 @@
+.Profile__input-container {
+  width: 410px;
+  height: 13px;
+  padding: 0 0 19px 0;
+  margin: 120px auto 15px auto;
+  border-bottom: 1px solid #E8E8E8;
+  position: relative;
+}
+
+.Profile__input-container:last-of-type {
+  border-bottom: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .Profile__input-container {
+    margin-top: 93px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Profile__input-container {
+    width: 260px;
+    margin-top: 77px;
+  }
+}

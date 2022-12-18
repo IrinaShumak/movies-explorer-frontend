@@ -1,0 +1,23 @@
+.Profile {
+  width: 100%;  
+  background: #FFFFFF;  
+  margin: 0 auto;
+  padding: 74px 0 70px 0;
+  box-sizing: border-box;
+  display: flex;  
+  flex-direction: column;  
+}
+
+@media screen and (max-width: 800px) {
+  .Profile {
+    padding-top: 236px;
+    padding-bottom: 269px;    
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Profile {    
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,17 @@
+.AboutProject__timeline-text {  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  vertical-align: middle; 
+  color: #000000;
+  margin: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .AboutProject__timeline-text {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

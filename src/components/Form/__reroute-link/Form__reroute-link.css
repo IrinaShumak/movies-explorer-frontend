@@ -1,0 +1,11 @@
+.Form__reroute-link {
+  color: #3456F3;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+}
+
+.Form__reroute-link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

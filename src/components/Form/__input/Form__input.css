@@ -1,0 +1,26 @@
+.Form__input {
+  outline: none;
+  border: none;
+  background: #F9F9F9;
+  border-radius: 8px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;  
+  width: 100%;
+  margin: 10px 0 0 0;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.Form__input:focus {
+  border: 1px solid #555;
+}
+
+@media screen and (max-width: 425px) {
+  .Form__input {
+    font-weight: 500;
+  }
+}

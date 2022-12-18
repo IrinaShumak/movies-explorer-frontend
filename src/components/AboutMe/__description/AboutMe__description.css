@@ -1,0 +1,20 @@
+.AboutMe__description {
+  width: calc(600/1140*100%);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .AboutMe__description {
+    width: calc(364/668*100%);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .AboutMe__description {
+    width: 100%;
+  }
+}
