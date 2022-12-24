@@ -1,0 +1,16 @@
+.MoviesCard__button {
+  appearance: none;
+  border: 0;
+  background-color: rgba(0,0,0,0);  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+  margin-top: 3px;
+}
+
+.MoviesCard__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

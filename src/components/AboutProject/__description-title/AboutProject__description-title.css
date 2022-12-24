@@ -1,0 +1,18 @@
+.AboutProject__description-title{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .AboutProject__description-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}

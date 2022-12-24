@@ -1,0 +1,22 @@
+.Header__link {  
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+  transition: text-decoration linear 0.2s;
+}
+
+.Header__link:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 800px) {
+  .Header__link:hover {
+    opacity: 1;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+  }
+}

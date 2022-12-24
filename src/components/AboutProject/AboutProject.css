@@ -1,0 +1,21 @@
+.AboutProject {
+  padding: 114px 70px 0 70px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  .AboutProject {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 94px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .AboutProject {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 72px;
+  }
+}

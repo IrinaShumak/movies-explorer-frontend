@@ -1,0 +1,26 @@
+.AboutMe__photo {
+  min-width: 270px;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 800px) {
+  .AboutMe__photo {
+    min-width: 255px;    
+    height: 307px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .AboutMe__photo {
+    min-width: 100%;
+    min-height: 352px;
+    order: -1;
+    margin-bottom: 40px;
+    background-size: contain;
+  }
+}

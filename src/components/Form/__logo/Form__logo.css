@@ -1,0 +1,18 @@
+.Form__logo {
+  padding: 0;
+  margin: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../../images/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  align-self: right;
+}
+
+@media screen and (max-width: 425px) {
+  .Form__logo {
+    align-self: center;
+  }
+}

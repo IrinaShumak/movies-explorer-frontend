@@ -1,0 +1,24 @@
+.AboutMe__main-info {  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.11;
+  color: #000000;
+  mix-blend-mode: normal;
+  margin: 0 0 26px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .AboutMe__main-info {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .AboutMe__main-info {
+    font-size: 11px;
+    line-height: 16px;   
+  }
+}

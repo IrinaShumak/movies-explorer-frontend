@@ -1,0 +1,73 @@
+.FilterCheckbox {
+	display: flex;
+	height: 20px;	
+	margin: 0;
+	position: relative;
+	vertical-align: middle;	
+	user-select: none;
+	font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.38;
+  color: #000000;
+	gap: 14px;
+}
+
+.FilterCheckbox .FilterCheckbox__checkbox-switch {
+	position: relative;	
+	display: inline-block;
+	box-sizing: border-box;			
+	width: 36px;	
+	height: 20px;
+	border: none;
+	border-radius: 20px;	
+	vertical-align: top;
+	background: #e9e9e9;
+	transition: .2s;
+}
+.FilterCheckbox .FilterCheckbox__checkbox-switch:before {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 8px;	
+	display: inline-block;
+	width: 8px;	
+	height: 8px;
+	border-radius: 50%;
+	background: #FFFFFF;	
+	transition: .15s;
+}
+.FilterCheckbox input[type=checkbox] {
+	display: block;	
+	width: 0;
+	height: 0;	
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.FilterCheckbox input[type=checkbox]:checked + .FilterCheckbox__checkbox-switch {
+	background: #2BE080;
+}
+.FilterCheckbox input[type=checkbox]:checked + .FilterCheckbox__checkbox-switch:before {
+	transform:translateX(14px);
+}
+ 
+/* Hover */
+.FilterCheckbox input[type="checkbox"]:not(:disabled) + .FilterCheckbox__checkbox-switch {
+	cursor: pointer;
+}
+ 
+/* Disabled */
+.FilterCheckbox input[type=checkbox]:disabled + .FilterCheckbox__checkbox-switch {
+	filter: grayscale(70%);	
+}
+
+@media screen and (max-width: 425px) {
+  .FilterCheckbox {
+		font-size: 11px;
+    line-height: 1.64;
+		gap: 13px;
+  }
+}

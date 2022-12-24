@@ -1,0 +1,15 @@
+.Input-error_place_name {
+  top: 295px;
+}
+
+@media screen and (max-width: 800px) {
+  .Input-error_place_name {
+    top: 457px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Input-error_place_name {
+    top: 331px;
+  }
+}

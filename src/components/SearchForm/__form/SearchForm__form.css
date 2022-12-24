@@ -1,0 +1,21 @@
+.SearchForm__form {  
+  border: 1.5px solid rgb(170, 170, 170, 0.2);
+  border-radius: 8px;
+  background: #FFFFFF;  
+  width: 100%;
+  margin: 70px auto 24px auto;
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+}
+
+@media screen and (max-width: 425px) {
+  .SearchForm__form {    
+    margin-bottom: 30px;
+    height: 56px;
+  }
+}
+
+.SearchForm__form:focus-within {
+  border: 1.5px solid #555;
+}

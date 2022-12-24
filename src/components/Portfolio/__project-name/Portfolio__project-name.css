@@ -1,0 +1,23 @@
+.Portfolio__project-name {  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.67;
+  letter-spacing: -0.04em;
+  color: #000000;
+  margin: 0 0 19px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .Portfolio__project-name {
+    font-size: 28px;
+    line-height: 1.79;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .Portfolio__project-name {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}

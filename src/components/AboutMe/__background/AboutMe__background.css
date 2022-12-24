@@ -1,0 +1,27 @@
+.AboutMe__background {  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #000000;
+  mix-blend-mode: normal;
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .AboutMe__background {
+    font-size: 12px;
+    line-height: 1.5;    
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .AboutMe__background {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 57px;
+    width: 100%;
+  }
+}

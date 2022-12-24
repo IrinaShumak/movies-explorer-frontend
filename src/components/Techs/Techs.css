@@ -1,0 +1,19 @@
+.Techs {
+  padding: 104px 70px 100px 70px;
+  margin: 0;
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .Techs {
+    padding: 94px 50px 90px 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Techs {
+    padding: 72px 18px 70px 18px;
+  }
+}

@@ -1,0 +1,28 @@
+.Form {
+  width: 396px;
+  height: 700px; 
+  background: #FFFFFF;  
+  margin: 0 auto;
+  padding: 70px 0;
+  box-sizing: border-box;
+  display: flex;  
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .Form {
+    padding-top: 232px;
+    padding-bottom: 232px;
+    height: 1024px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Form {
+    width: 260px;
+    height: 780px; 
+    padding-top: 56px;
+    padding-bottom: 30px;
+  }
+}

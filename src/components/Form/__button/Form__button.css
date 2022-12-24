@@ -1,0 +1,45 @@
+.Form__button {  
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0);
+  background-image: url(../../../images/button.svg);
+  min-height: 45px;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 103px;
+  right: 0;
+  padding: 0;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+}
+  
+.Form__button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+  .Form__button {
+    bottom: 265px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Form__button {
+    bottom: 59px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

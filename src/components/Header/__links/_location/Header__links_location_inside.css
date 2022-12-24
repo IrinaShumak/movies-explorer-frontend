@@ -1,0 +1,9 @@
+.Header__links_location_inside {
+  flex-direction: row;  
+}
+
+@media screen and (max-width: 800px) {
+  .Header__links_location_inside {
+    display: none;
+  }
+} 

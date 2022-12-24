@@ -1,0 +1,6 @@
+.MoviesCard__button_type_delete {
+  background-image: url(../../../../images/delete-btn.svg);
+  height: 9px;
+  width: 9px;
+  display: none;
+}

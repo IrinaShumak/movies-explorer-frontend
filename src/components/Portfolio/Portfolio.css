@@ -1,0 +1,23 @@
+.Portfolio {
+  padding: 0 72px 106px 70px;
+  margin: 0;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .Portfolio {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Portfolio {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 50px;  
+  }
+}

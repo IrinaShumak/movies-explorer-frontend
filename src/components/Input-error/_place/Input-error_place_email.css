@@ -1,0 +1,15 @@
+.Input-error_place_email {
+  top: 383px;
+}
+
+@media screen and (max-width: 800px) {
+  .Input-error_place_email {
+    top: 545px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Input-error_place_email {
+    top: 419px;
+  }
+}
