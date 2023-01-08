@@ -8,9 +8,14 @@ function MoviesCardList (props) {
     <section className="MoviesCardList">      
       {props.movies.map((movieItem) => {
         return (<MoviesCard 
-        key={movieItem.movieId} 
+        key={movieItem.id||movieItem.movieId}
+        id={movieItem.id||movieItem.movieId} 
         movie = {movieItem}
-        button = {props.button}         
+        type= {props.type}
+        button = {props.button}
+        savedMovies={props.savedMovies}
+        handleCardLike = {props.handleCardLike}
+        handleCardUnlike={props.handleCardUnlike}       
         />)
         })
       }         

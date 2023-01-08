@@ -12,6 +12,7 @@
   line-height: 1.38;
   color: #000000;
 	gap: 14px;
+	max-width: 180px;
 }
 
 .FilterCheckbox .FilterCheckbox__checkbox-switch {

@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../Header/Header.js';
 import NavTab from '../NavTab/NavTab.js';
 import Promo from '../Promo/Promo.js';
 import Techs from '../Techs/Techs.js';
@@ -11,7 +12,10 @@ function Main (props) {
   
   return (
     <main className="content">
-     <NavTab />
+     {props.loggedIn 
+       ? (<Header isOpen ={props.isBurgerMenuOpen} onOpen={props.handleBurgerMenuOpening} onClose={props.handleBurgerMenuClosing}/>)
+       : (<NavTab />)
+     }
      <Promo />
      <AboutProject />
      <Techs />

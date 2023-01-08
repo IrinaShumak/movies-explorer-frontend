@@ -4,9 +4,9 @@ function FilterCheckbox(props) {
 
   
   return (
-    <label class="FilterCheckbox">
-	    <input type="checkbox" />
-	    <span class="FilterCheckbox__checkbox-switch"></span>
+    <label className="FilterCheckbox">
+	    <input type="checkbox" onChange={props.onChange} checked={props.isChecked}/>
+	    <span className="FilterCheckbox__checkbox-switch"></span>
       Короткометражки
     </label>  
   );

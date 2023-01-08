@@ -10,7 +10,8 @@ function SearchForm(props) {
         action="#" 
         method="post" 
         name="SearchForm"
-        //onSubmit= {props.handleSubmit}        
+        onSubmit= {props.handleSubmit}
+        noValidate     
       >      
         <input 
           id="search-input" 
@@ -18,13 +19,15 @@ function SearchForm(props) {
           className="SearchForm__input" 
           name="search"
           placeholder="Фильм" 
-          value=''        
+          value={props.search || ''}
+          onChange={props.onChange}
+          required       
         />
       
         <button type="submit" className="SearchForm__button">Поиск</button>      
       </form>
-    
-      <FilterCheckbox />
+      <span className={`Input-error Input-error_place_search`}>{props.searchError}</span>
+      <FilterCheckbox isChecked={props.isChecked} onChange={props.handleCheckbox}/>
     </section>
   );
 }

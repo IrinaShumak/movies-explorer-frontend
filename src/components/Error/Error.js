@@ -1,14 +1,14 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Error(props) {
-  const history = useHistory();  
+  const history = useNavigate();  
 
   return (    
     <section className="Error">              
-      <p className="Error__code">{props.error}</p>
-      <p className="Error__message">{props.message}</p>
-      <button type="button" className="Error__return-button" onClick={() => history.goBack()}>Назад</button>
+      <p className="Error__code">404</p>
+      <p className="Error__message">Страница не найдена</p>
+      <button type="button" className="Error__return-button" onClick={() => history(-3)}>Назад</button>
     </section>
   );
 }

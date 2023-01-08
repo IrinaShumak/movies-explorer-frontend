@@ -1,0 +1,21 @@
+.InfoTooltip__close {
+  appearance: none;
+  border: 0;
+  background-color: rgba(0,0,0,0);  
+  background-image: url(../../../images/popup-close.svg);
+  min-height: 32px;
+  min-width: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  cursor: pointer;
+  top: -40px;
+  right: -40px;
+  opacity: 1;
+  transition: opacity linear 0.2s;
+}
+
+.InfoTooltip__close:hover {
+  opacity: 0.6;
+}
