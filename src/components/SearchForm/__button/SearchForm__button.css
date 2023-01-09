@@ -2,11 +2,14 @@
   appearance: none;
   border: 0;
   box-sizing: border-box;
-  background-color: #3456F3;
+  background: #3456F3;
   min-height: 52px;
   width: 102px;
   margin: 10px 8px 10px 0;  
   padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
