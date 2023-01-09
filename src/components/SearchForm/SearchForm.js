@@ -24,7 +24,7 @@ function SearchForm(props) {
           required       
         />
       
-        <button type="submit" className="SearchForm__button">Поиск</button>      
+        <button type="submit" className={`SearchForm__button`}>Поиск</button>      
       </form>
       <span className={`Input-error Input-error_place_search`}>{props.searchError}</span>
       <FilterCheckbox isChecked={props.isChecked} onChange={props.handleCheckbox}/>
