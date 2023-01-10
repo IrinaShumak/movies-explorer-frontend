@@ -17,7 +17,18 @@ function SavedMovies(props) {
 
   function handleCheckbox () {
     setIsChecked((active) => !active);
+    defineRenderDetails (!isChecked);
   } 
+
+  function defineRenderDetails (shortFilms) {
+    let moviesList = props.savedMovies.filter(c => c.nameRU.toLowerCase().includes(search.toLowerCase())&&((shortFilms&&c.duration<41)||(!shortFilms)));      
+    if (moviesList.length === 0) {
+      setSearchResult('Ничего не найдено')
+    } else {
+      setMovies(moviesList)
+      setSearchResult('');
+    }
+  }
   
   React.useEffect(() => {
     setMovies(props.savedMovies);
@@ -27,12 +38,8 @@ function SavedMovies(props) {
   function handleSearchSubmit(e){
     e.preventDefault();    
     if (e.target.closest("form").checkValidity()){      
-      setSearchError('');
-      setSearchResult('');     
-      let moviesList = props.savedMovies.filter(c => c.nameRU.includes(search)&&((isChecked&&c.duration<41)||(!isChecked)));      
-      if (moviesList.length === 0) {
-        setSearchResult('Ничего не найдено')
-      } else {setMovies(moviesList)};        
+      setSearchError('');      
+      defineRenderDetails (isChecked);        
     } else {      
       setSearchError('Нужно ввести ключевое слово')
     }    

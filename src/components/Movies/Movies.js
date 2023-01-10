@@ -45,6 +45,7 @@ function Movies(props) {
 
   function handleCheckbox () {
     setIsChecked((active) => !active);
+    if (JSON.parse(localStorage.getItem('moviesList'))) {defineRenderDetails (search, !isChecked)}    
   }
 
   function defineRenderDetails (searchWord, shortFilms) {
@@ -62,21 +63,20 @@ function Movies(props) {
       setItems(7);
       setCounter(2);
     }    
-    let moviesList = JSON.parse(localStorage.getItem('moviesList')).filter(c => c.nameRU.includes(searchWord)&&((shortFilms&&c.duration<41)||(!shortFilms)));    
+    let moviesList = JSON.parse(localStorage.getItem('moviesList')).filter(c => c.nameRU.toLowerCase().includes(searchWord.toLowerCase())&&((shortFilms&&c.duration<41)||(!shortFilms)));    
     const newFilm = moviesList.slice(0, size);
     setSearch(searchWord);
     setIsChecked(shortFilms);
     setInitialMovies(moviesList);
-    setMovies(newFilm);
-    if (moviesList.length === 0) {setSearchResult('Ничего не найдено')};    
+    setMovies(newFilm);    
+    if (moviesList.length === 0) {setSearchResult('Ничего не найдено')} else {setSearchResult('')};    
   } 
 
 
   function handleSearchSubmit(e){
     e.preventDefault();    
     if (e.target.closest("form").checkValidity()){      
-      setSearchError('');
-      setSearchResult('');      
+      setSearchError('');      
       setIsLoading(true);
       apiMovies.takeMoviesInfo()
         .then((data) => {          
@@ -113,7 +113,7 @@ function Movies(props) {
         handleSubmit={handleSearchSubmit}
         handleCheckbox={handleCheckbox}
       />
-      {(isLoading)&&(<Preloader />)};
+      {(isLoading)&&(<Preloader />)}
       {((!searchResult)&&(!isLoading))&&( <>
       <MoviesCardList 
         movies={ movies } 
@@ -129,7 +129,7 @@ function Movies(props) {
         Ещё
       </button>
       </>
-      )};
+      )}
       {((searchResult)&&(!isLoading))&&(<p className="Movies__search-result">{searchResult}</p>)}
       <Footer />       
     </section>      
