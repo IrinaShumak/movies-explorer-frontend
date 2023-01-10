@@ -1,0 +1,8 @@
+.Profile__button_disabled {
+  color: #cbcaca;
+  cursor: auto;  
+}
+
+.Profile__button_disabled:hover {
+  opacity: 1;
+}

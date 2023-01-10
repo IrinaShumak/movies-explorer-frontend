@@ -1,0 +1,16 @@
+.Input-error_place_submit {
+  top: 536px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .Input-error_place_submit {
+    top: 698px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Input-error_place_submit {
+    top: 572px;
+  }
+}

@@ -1,0 +1,9 @@
+.Input-error_place_search {
+  top: 150px;
+}
+
+@media screen and (max-width: 425px) {
+  .Input-error_place_search {
+    top: 130px;
+  }
+}

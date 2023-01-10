@@ -1,0 +1,11 @@
+.InfoTooltip__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-align: center;
+  margin: 0 auto 60px auto;
+  box-sizing: border-box;
+  max-width: 270px;
+}
